@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { ScrollView, View, Button } from 'react-native';
+import { ScrollView, View, Button, StyleSheet } from 'react-native';
 import CadastroFornecedor from './components/CadastroFornecedor/CadastroFornecedor';
 import ListagemFornecedores from './components/ListagemFornecedores/ListagemFornecedores';
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('listagem');
+  const [currentPage, setCurrentPage] = useState('cadastro');
   const [fornecedores, setFornecedores] = useState([]);
 
   const handleCadastro = (novoFornecedor) => {
@@ -29,15 +29,39 @@ const App = () => {
 
   return (
     <ScrollView>
-      <View style={{ margin: 20 }}>
-        <Button onPress={() => setCurrentPage('cadastro')} title="Cadastro" />
-        <Button onPress={() => setCurrentPage('listagem')} title="Listagem" />
-        {/* Adicione mais botões conforme necessário */}
+      <View style={styles.container}>
+        <View style={styles.buttonContainer}>
+          <Button 
+          onPress={() => setCurrentPage('cadastro')} title="Cadastro" 
+          />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button 
+          onPress={() => setCurrentPage('listagem')} title="Listagem"           
+          />          
+        </View>
+        
       </View>
 
       {renderPage()}
     </ScrollView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1, 
+    justifyContent: 'center',
+    width: '90%',
+    alignSelf: 'center',
+    paddingTop: 100,
+    paddingBottom: 20,
+  },
+  buttonContainer: {
+    padding: 5,
+  }
+
+
+});
 
 export default App;

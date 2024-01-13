@@ -7,13 +7,16 @@ const ListagemFornecedores = ({ fornecedores }) => {
       <Text style={styles.titulo}>Lista de Fornecedores:</Text>
       {fornecedores.map((fornecedor) => (
         <View key={fornecedor.id} style={styles.fornecedorContainer}>
-          <Text style={styles.fornecedorNome}>{fornecedor.nome}</Text>
-          <Text style={styles.fornecedorCategoria}>{fornecedor.categoria}</Text>
-          {/* Adicione mais informações do fornecedor conforme necessário */}
           <Image
             source={{ uri: fornecedor.imagemUri }}
             style={{ width: 100, height: 100, borderRadius: 50 }}
           />
+          <Text style={styles.fornecedorNome}>{fornecedor.nome}</Text>
+          <Text style={styles.fornecedorDados}>{fornecedor.categoria}</Text>
+          <Text style={styles.fornecedorDados}>{fornecedor.endereco}</Text>
+          <Text style={styles.fornecedorDados}>{fornecedor.contato}</Text>
+          <Text style={styles.fornecedorDados}>{fornecedor.imagemUri}</Text>
+          {/* Adicione mais informações do fornecedor conforme necessário */}
         </View>
       ))}
     </ScrollView>
@@ -40,7 +43,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
   },
-  fornecedorCategoria: {
+  fornecedorDados: {
     fontSize: 14,
     color: '#666',
   },

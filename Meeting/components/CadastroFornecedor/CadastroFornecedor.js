@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, TextInput, Button, StyleSheet } from 'react-native';
+import AssociacaoImagens from '../AssociacaoImagens/AssociacaoImagens';
 
 const CadastroFornecedor = ({ onCadastro }) => {
   const [nome, setNome] = useState('');
@@ -59,13 +60,9 @@ const CadastroFornecedor = ({ onCadastro }) => {
         onChangeText={(text) => setContato(text)}
         style={styles.input}
       />
-      <TextInput
-        placeholder="Imagem URI"
-        value={imagemUri}
-        onChangeText={(text) => setImagemUri(text)}
-        style={styles.input}
-      />
-      {/* Adicione mais campos conforme necessário */}
+      <View style={styles.imagemButton}>
+        <AssociacaoImagens onImagemSelecionada={setImagemUri} />
+      </View>
       <Button title="Cadastrar" onPress={handleCadastro} />
     </View>
   );
@@ -74,6 +71,8 @@ const CadastroFornecedor = ({ onCadastro }) => {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
+    
+    
   },
   input: {
     height: 40,
@@ -82,6 +81,9 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     paddingHorizontal: 10,
   },
+  imagemButton: {
+    paddingTop: 20,
+  }
 });
 
 export default CadastroFornecedor;
