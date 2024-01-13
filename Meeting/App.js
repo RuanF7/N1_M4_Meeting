@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ScrollView, View, Button, StyleSheet } from 'react-native';
+import { ScrollView, View, Button, StyleSheet, Pressable, Text } from 'react-native';
 import CadastroFornecedor from './components/CadastroFornecedor/CadastroFornecedor';
 import ListagemFornecedores from './components/ListagemFornecedores/ListagemFornecedores';
 
@@ -28,18 +28,26 @@ const App = () => {
   };
 
   return (
-    <ScrollView>
+    <ScrollView style={{backgroundColor: 'black'}}>
       <View style={styles.container}>
-        <View style={styles.buttonContainer}>
-          <Button 
+        <Pressable 
           onPress={() => setCurrentPage('cadastro')} title="Cadastro" 
-          />
-        </View>
-        <View style={styles.buttonContainer}>
-          <Button 
-          onPress={() => setCurrentPage('listagem')} title="Listagem"           
-          />          
-        </View>
+          style={styles.buttonContainer}
+          >
+          <Text style={styles.buttonText}>
+            Cadastro
+          </Text>
+        </Pressable>        
+        
+        <Pressable 
+          onPress={() => setCurrentPage('listagem')} title="Listagem"  
+          style={styles.buttonContainer}         
+          >
+           <Text style={styles.buttonText}>
+            Listagem
+          </Text>
+        </Pressable>          
+        
         
       </View>
 
@@ -56,10 +64,24 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     paddingTop: 100,
     paddingBottom: 20,
+    backgroundColor: '#000000'
   },
   buttonContainer: {
-    padding: 5,
-  }
+    padding: 8,
+    margin: 5,
+    elevation: 3,
+    backgroundColor: '#000000',
+    borderWidth: 2,
+    borderColor: '#00ff00',
+    borderRadius: 10,
+  },
+  buttonText: {
+    color: '#ffffff',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    fontSize: 20,
+    letterSpacing: 0.25,
+  },
 
 
 });
