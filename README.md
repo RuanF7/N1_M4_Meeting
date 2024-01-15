@@ -27,4 +27,4 @@ atividade, você aprenderá os princípios básicos do React Native.
 
 ## Cadastrando Fornecedor
 
-<img src="/Meeting/assets/cadastrar.png" alt="Tela de cadatro">
+<img src="/Meeting/assets/cadastrar.png" alt="Tela de cadatro" width='25'>
