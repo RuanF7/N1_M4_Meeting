@@ -25,4 +25,6 @@ atividade, você aprenderá os princípios básicos do React Native.
 3 - Use o comando: git install</br>
 4 - Por último, digite o comando: npx expo start</br>
 
-## 
+## Cadastrando Fornecedor
+
+<img src="file:///D:/N1-M4/Meeting/prints/WhatsApp%20Image%202024-01-15%20at%2010.40.24.jpeg" alt="Tela de cadatro">
