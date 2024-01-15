@@ -27,4 +27,20 @@ atividade, você aprenderá os princípios básicos do React Native.
 
 ## Cadastrando Fornecedor
 
-<img src="/Meeting/assets/cadastrar.png" alt="Tela de cadatro" width='200'>
+<img src="/Meeting/assets/cadastrar.png" alt="Tela de cadatro" width='200'> </br>
+
+1 - Digite todos os dados pedidos nos campos de input. </br>
+
+<img src="/Meeting/assets/cadastrando.png" alt="Tela de cadatro" width='200'> </br>
+
+2 - Busque a imagem de sua preferência em seu dispositivo. </br>
+
+<img src="/Meeting/assets/buscandoImagem.png" alt="Tela de cadatro" width='200'> </br>
+
+3 - Após os dados preenchidos e a imagem escolhida, clique em cadastrar, para ser redirecionado a página listagem, com o fornecedor que acabou de cadastrar na lista de fornecedores. </br>
+
+<img src="/Meeting/assets/listagem.png" alt="Tela de cadatro" width='200'> </br>
+
+4 - Clique em cadastrar para cadastrar um novo fornecedor. Após cadastrar todos os fornecedores, poderá vê-los na aba listagem. </br>
+
+<img src="/Meeting/assets/listaCompleta.png" alt="Tela de cadatro" width='200'>
