@@ -3,11 +3,11 @@
 
 ## Objetivos da prática
 
-Configurar o ambiente de desenvolvimento React Native;
-Implementar a funcionalidade de entrada de texto em um componente React Native;
-Implementar um Componente de Lista Dinâmica (ScrollView);
+Configurar o ambiente de desenvolvimento React Native; </br>
+Implementar a funcionalidade de entrada de texto em um componente React Native;</br>
+Implementar um Componente de Lista Dinâmica (ScrollView);</br>
 Implementar componentes React Native para exibir informações de forma dinâmica
-em listas;
+em listas;</br>
 Empregar elementos visuais em um aplicativo React Native.
 
 ## Contextualização
@@ -20,9 +20,9 @@ atividade, você aprenderá os princípios básicos do React Native.
 
 ## Rodando o projeto
 
-1 - Clone o repositório com o comando: git clone https://github.com/RuanF7/N1_M4_Meeting
-2 - Exclua a pasta package-lock.json
-3 - Use o comando: git install
-4 - Por último, digite o comando: npx expo start
+1 - Clone o repositório com o comando: git clone https://github.com/RuanF7/N1_M4_Meeting</br>
+2 - Exclua a pasta package-lock.json</br>
+3 - Use o comando: git install</br>
+4 - Por último, digite o comando: npx expo start</br>
 
 ## 
