@@ -27,4 +27,4 @@ atividade, você aprenderá os princípios básicos do React Native.
 
 ## Cadastrando Fornecedor
 
-<img src="file:///D:/N1-M4/Meeting/prints/WhatsApp%20Image%202024-01-15%20at%2010.40.24.jpeg" alt="Tela de cadatro">
+<img src="/prints/WhatsApp Image 2024-01-15 at 10.40.24.jpeg" alt="Tela de cadatro">
