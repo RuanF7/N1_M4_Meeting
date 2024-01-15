@@ -10,7 +10,6 @@ const CadastroFornecedor = ({ onCadastro }) => {
   const [imagemUri, setImagemUri] = useState('');
 
   const handleCadastro = () => {
-    // Validar os dados se necessário
 
     // Criar um novo fornecedor
     const novoFornecedor = {
@@ -20,7 +19,6 @@ const CadastroFornecedor = ({ onCadastro }) => {
       endereco,
       contato,
       imagemUri,
-      // Adicione mais campos conforme necessário
     };
 
     // Limpar os campos após o cadastro
@@ -95,7 +93,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   buttonText: {
-    color: '#fff',
+    color: '#ffffff',
     fontWeight: 'bold',
     textAlign: 'center',
     fontSize: 20,

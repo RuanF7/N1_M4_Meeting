@@ -14,7 +14,7 @@ const AssociacaoImagens = ({ onImagemSelecionada }) => {
     });
 
     if (resultado.canceled === false) {
-      // Aviso: "cancelled" foi substituído por "canceled"
+
       setImagem(resultado.assets && resultado.assets.length > 0 ? resultado.assets[0].uri : null);
       onImagemSelecionada(resultado.assets && resultado.assets.length > 0 ? resultado.assets[0].uri : null);
     }
